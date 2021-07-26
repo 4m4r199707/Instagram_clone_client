@@ -9,7 +9,7 @@ const CreatePost = () => {
     const[url,setUrl] = useState("");
 
     const history = useHistory();
-    
+
     const postDetails = ()=>{
         const data = new FormData()
         data.append("file",image)
@@ -59,7 +59,7 @@ const CreatePost = () => {
             textAlign:"center"
         }}>
             <input type="text"placeholder="title" value={title} onChange={(e) => setTitle(e.target.value)}/>
-            <input type="text"placeholder="body" value={title} onChange={(e) => {setBody(e.target.value)}}/>
+            <input type="text"placeholder="body" value={body} onChange={(e) => {setBody(e.target.value)}}/>
 
             <div className="file-field input-field">
                 <div className="btn #64b5f6 blue darken-1">
